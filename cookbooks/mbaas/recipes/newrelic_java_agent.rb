@@ -1,0 +1,1 @@
+include_recipe "common_apps::newrelic_java_agent"

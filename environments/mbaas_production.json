@@ -1,0 +1,22 @@
+{
+    "name": "mbaas_production",
+    "description": "The production Chef environment for MBaaS",
+    "cookbook_versions": {
+        "mbaas":"~> 1.1.0"
+    },
+    "json_class": "Chef::Environment",
+    "chef_type": "environment",
+    "default_attributes": {
+        "mbaas": {
+            "deployable_war": "stage-mbaas.war",
+            "warbuilds_bucket": "s3://bbmobile-warbuilds.prod"
+        },
+        "java": {
+            "jdk_version": 7,
+            "install_flavor": "oracle",
+            "oracle": {
+                "accept_oracle_download_terms": true
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "profile_cloudbb_tyo_mbaas",
+    "description": "Region Profile for MBaaS",
+    "default_attributes": {
+        "mbaas": {
+            "development": {
+                "redis_host": ""
+            },
+            "staging": {
+                "redis_host": ""
+            },
+            "production": {
+                "redis_host": "mbaas-prod-tyo-cache.mobile.medu.com"
+            }
+        }
+    }
+}
